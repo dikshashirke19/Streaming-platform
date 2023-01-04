@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Death Stare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&display=swap" rel="stylesheet">
+    <!--font-family: 'Courgette', cursive;-->
+    <link href="https://fonts.googleapis.com/css2?family=Eczar&display=swap" rel="stylesheet">
+    <!-- font-family: 'Eczar', serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Eczar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b13805ba60.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+<body>  
+    
+
+    
+    <section class="home">
+        <div class="headerbg">
+            <header>
+             
+                <div class="container">
+                    <div class="navbar flex1">
+
+                        <div class="logo">
+                            <!-- <img src="images/logo2.png" alt="" > -->
+                        <h2> <i class="fa-sharp fa-solid fa-ghost"></i> STARE</h2></div>
+                        
+                        <nav>
+                            <ul id="menu">
+                              <li><a href="#"> Home</a></li>
+                              <li><a href="#"> Movies</a></li>
+                              <li><a href="#"> Anime</a></li>
+                              <li><a href="#"> Webseries</a></li>
+                              <li><a href="#"> Sign-up</a></li>
+
+                        
+                            </ul>
+                        </nav>
+
+                        <span class="fa fa-bars" onclick="menutoggle()"></span>
+                        <div class="subscribe flex">
+                            <i class="fas fa-search"></i>
+                            <i  id="playbtn" class="fas fa-user"></i>
+                            <button > SUBSCRIBE</button>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="home-content mtop">
+                <div class="container">
+                    <div class="left">
+                        <h1>Kawaiden</h1>
+                        <div class="time flex">
+                           <label>R</label>
+                           <i class="fa-solid fa-skull"></i>
+                           <span>1hrs 50min</span>
+                           <i class="fa-solid fa-skull"></i>
+                          <span>2015</span>
+                          <i class="fa-solid fa-skull"></i>
+                            
+                           <button>Horror</button>
+                        </div>  
+                        <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto hic vitae dolorum deleniti laborum repellendus placeat tenetur, cum eaque? Nesciunt., </p>
+                        <div class="button flex">
+                            <button class="btn"> Play now</button>
+                            <i id="playbtn" class="fas fa-play"></i>
+                            <p>Watch Trailer</p>
+                        </div>             
+
+
+                           
+                           
+                        
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>  
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ---------------javascript below ------------------->
+<script>
+    var menu =document.getElementById('menu');
+    menu.style.maxHeight = "0px";
+    function menutoggle()
+    {
+        if (menu.style.maxHeight == "0px")
+        {
+            menu.style.maxHeight ="200px";
+        }
+        else
+        {
+            menu.style.maxHeight="0px"
+        } 
+    }
+     window.addEventListener("scroll", function()
+     {
+        var header= document.querySelector("header");
+        header.classList.toString("sticky", window.scrollY > 50);
+
+     })
+</script>
+<!---======================script end=====================-->
+ 
+
+
+
+
+
+
+
+
+
+<!--=========================== 1 section ================-->
+
+<section class="popular ">
+    <div class="container">
+        <div class="heading flex1">
+            <h2>Most Popular</h2>
+            <button>MORE VIDEO</button>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/images/mov3.jpeg" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="far fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                       <i id="playbtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Confessions</h3>
+                        <div class="time flex1">
+                            <span>1hr 50min</span>
+                            <a href="#">Thriller</a>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/images/mov2.jpg" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="far fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                       <i id="playbtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Sucide club</h3>
+                        <div class="time flex1">
+                            <span>1hr 50min</span>
+                            <a href="#">Thriller</a>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/images/mov4.jpg" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="far fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                       <i id="playbtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Sucide club</h3>
+                        <div class="time flex1">
+                            <span>1hr 50min</span>
+                            <a href="#">Thriller</a>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/images/mov1.jpeg" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="far fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                       <i id="playbtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Sucide club</h3>
+                        <div class="time flex1">
+                            <span>1hr 50min</span>
+                            <a href="#">Thriller</a>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/images/home-1.jpg" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="far fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                       <i id="playbtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Zombie Land</h3>
+                        <div class="time flex1">
+                            <span>1hr 50min</span>
+                            <a href="#">Thriller</a>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/images/home-1.jpg" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="far fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                       <i id="playbtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Zombie Land</h3>
+                        <div class="time flex1">
+                            <span>1hr 50min</span>
+                            <a href="#">Thriller</a>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/images/home-1.jpg" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="far fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                       <i id="playbtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Zombie Land</h3>
+                        <div class="time flex1">
+                            <span>1hr 50min</span>
+                            <a href="#">Thriller</a>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+</section>
+<!--=========================== 1 section ================-->
+
+<!--=========================== 2 section ================-->
+
+<section class="popular mtop">
+    <div class="container">
+        <div class="heading flex1">
+            <h2>Anime</h2>
+            <button>MORE VIDEO</button>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/images/Another.jpg" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="far fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                       <i id="playbtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Another</h3>
+                        <div class="time flex1">
+                            <span>1hr 50min</span>
+                            <a href="#">Thriller</a>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/images/hellgirl.png" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="far fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                       <i id="playbtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Hell Girl</h3>
+                        <div class="time flex1">
+                            <span>1hr 50min</span>
+                            <a href="#">Thriller</a>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/images/Blood-C_key_art.jpg" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="far fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                       <i id="playbtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Blood C</h3>
+                        <div class="time flex1">
+                            <span>1hr 50min</span>
+                            <a href="#">Thriller</a>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/images/Lily_C.A.T._poster.jpg" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="far fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                       <i id="playbtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Lily C.A.T.</h3>
+                        <div class="time flex1">
+                            <span>1hr 50min</span>
+                            <a href="#">Thriller</a>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/images/HSOD.jpeg" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="far fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                       <i id="playbtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>H.S.O.D</h3>
+                        <div class="time flex1">
+                            <span>1hr 50min</span>
+                            <a href="#">Thriller</a>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/images/home-1.jpg" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="far fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                       <i id="playbtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Zombie Land</h3>
+                        <div class="time flex1">
+                            <span>1hr 50min</span>
+                            <a href="#">Thriller</a>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/images/home-1.jpg" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="far fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                       <i id="playbtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Zombie Land</h3>
+                        <div class="time flex1">
+                            <span>1hr 50min</span>
+                            <a href="#">Thriller</a>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+</section>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+<script>
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    dots: false,
+    nav:true,
+    responsive:{
+        411:{
+            items:1
+        },
+       768:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})  
+</script>
+
+
+
+<!--==================new sectio for new releases==================-->
+<section class="new-releases mtop">
+    <div class="container">
+        <div class="owl-carousel owl-carousel2 owl-theme">
+        <div class="items">
+            <div class="left">
+                <h2><span style="color: red;"> |</span> New Releases</h2>
+                <div class="img">
+                    <img src="/images/newrel2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h1>Curse of Lorana</h1>
+                </div>
+                <div class="time flex">
+                    <label>R</label>
+                    <i class="fa-solid fa-skull"></i>
+                    <span>1hrs 50min</span>
+                    <i class="fa-solid fa-skull"></i>
+                    <a href="#" class="flex1"><i class="fa-brands fa-imdb"></i></a>
+                    <i class="fa-solid fa-skull"></i>
+                   <span>2015</span>
+                   <i class="fa-solid fa-skull"></i>
+                     
+                    <button>Horror</button>
+                 </div> 
+                 <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores laudantium non in, aliquid rem autem aliquam modi facere assumenda odit quod, totam saepe asperiores tenetur nam repellat debitis voluptatum atque.
+                 </p>
+                 <div class="button flex">
+                    <button type="button" name="button" class="btn"> PLAY NOW</button>
+                    <i id="playbtn" class="fas fa-play"></i>
+                    <p>Watch</p>
+                 </div>
+            </div>
+        </div>  
+        <div class="items">
+            <div class="left">
+                <h2><span style="color: red;"> |</span> New Releases</h2>
+                <div class="img">
+                    <img src="/images/newrel.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h1>The DEAD </h1>
+                </div>
+                <div class="time flex">
+                    <label>R</label>
+                    <i class="fa-solid fa-skull"></i>
+                    <span>1hrs 50min</span>
+                    <i class="fa-solid fa-skull"></i>
+                    <a href="#" class="flex1"><i class="fa-brands fa-imdb"></i></a>
+                    <i class="fa-solid fa-skull"></i>
+                   <span>2015</span>
+                   <i class="fa-solid fa-skull"></i>
+                     
+                    <button>Horror</button>
+                 </div> 
+                 <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores laudantium non in, aliquid rem autem aliquam modi facere assumenda odit quod, totam saepe asperiores tenetur nam repellat debitis voluptatum atque.
+                 </p>
+                 <div class="button flex">
+                    <button type="button" name="button" class="btn"> PLAY NOW</button>
+                    <i id="playbtn" class="fas fa-play"></i>
+                    <p>Watch</p>
+                 </div>
+            </div>
+        </div>  
+        <div class="items">
+            <div class="left">
+                <h2><span style="color: red;"> |</span> New Releases</h2>
+                <div class="img">
+                    <img src="/images/home-3.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h1>Ring </h1>
+                </div>
+                <div class="time flex">
+                    <label>R</label>
+                    <i class="fa-solid fa-skull"></i>
+                    <span>1hrs 50min</span>
+                    <i class="fa-solid fa-skull"></i>
+                    <a href="#" class="flex1"><i class="fa-brands fa-imdb"></i></a>
+                    <i class="fa-solid fa-skull"></i>
+                   <span>2015</span>
+                   <i class="fa-solid fa-skull"></i>
+                     
+                    <button>Horror</button>
+                 </div> 
+                 <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores laudantium non in, aliquid rem autem aliquam modi facere assumenda odit quod, totam saepe asperiores tenetur nam repellat debitis voluptatum atque.
+                 </p>
+                 <div class="button flex">
+                    <button type="button" name="button" class="btn"> PLAY NOW</button>
+                    <i id="playbtn" class="fas fa-play"></i>
+                    <p>Watch</p>
+                 </div>
+            </div>
+        </div>  
+    </div>
+</section>
+
+<!--==================new sectio for new releases==================-->
+<!--script-->
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    dots: false,
+    nav:false,
+    items: 1
+    })  
+</script>
+<!--script-->
+
+
+<!--===================another section==================-->
+<section class="popular ">
+    <div class="container">
+        <div class="heading flex1">
+            <h2>Web Series</h2>
+            <button>MORE VIDEO</button>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/images/Another.jpg" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="far fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                       <i id="playbtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Another</h3>
+                        <div class="time flex1">
+                            <span>1hr 50min</span>
+                            <a href="#">Thriller</a>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/images/hellgirl.png" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="far fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                       <i id="playbtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Hell Girl</h3>
+                        <div class="time flex1">
+                            <span>1hr 50min</span>
+                            <a href="#">Thriller</a>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/images/Blood-C_key_art.jpg" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="far fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                       <i id="playbtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Blood C</h3>
+                        <div class="time flex1">
+                            <span>1hr 50min</span>
+                            <a href="#">Thriller</a>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/images/Lily_C.A.T._poster.jpg" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="far fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                       <i id="playbtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Lily C.A.T.</h3>
+                        <div class="time flex1">
+                            <span>1hr 50min</span>
+                            <a href="#">Thriller</a>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/images/HSOD.jpeg" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="far fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                       <i id="playbtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>H.S.O.D</h3>
+                        <div class="time flex1">
+                            <span>1hr 50min</span>
+                            <a href="#">Thriller</a>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/images/home-1.jpg" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="far fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                       <i id="playbtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Zombie Land</h3>
+                        <div class="time flex1">
+                            <span>1hr 50min</span>
+                            <a href="#">Thriller</a>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/images/home-1.jpg" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="far fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                       <i id="playbtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Zombie Land</h3>
+                        <div class="time flex1">
+                            <span>1hr 50min</span>
+                            <a href="#">Thriller</a>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+</section>
+
+<!--web series script-->
+<script>
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      dots: false,
+      nav:true,
+      responsive:{
+          411:{
+              items:1
+          },
+         768:{
+              items:3
+          },
+          1000:{
+              items:4
+          }
+      }
+  })  
+  </script>
+<!--===================another section ends==================-->
+
+
+<!--====================================new animes================================-->
+<section class="new-releases mtop">
+    <div class="container">
+        <div class="owl-carousel owl-carousel2 owl-theme">
+        <div class="items">
+            <div class="left">
+                <h2><span style="color: red;"> |</span> New Releases</h2>
+                <div class="img">
+                    <img src="/images/parasyte-anime.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h1>Parasyte</h1>
+                </div>
+                <div class="time flex">
+                    <label>R</label>
+                    <i class="fa-solid fa-skull"></i>
+                    <span>12-episodes</span>
+                    <i class="fa-solid fa-skull"></i>
+                    <a href="#" class="flex1"><i class="fa-brands fa-imdb"></i></a>
+                    <i class="fa-solid fa-skull"></i>
+                   <span>2015</span>
+                   <i class="fa-solid fa-skull"></i>
+                     
+                    <button>Horror</button>
+                 </div> 
+                 <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores laudantium non in, aliquid rem autem aliquam modi facere assumenda odit quod, totam saepe asperiores tenetur nam repellat debitis voluptatum atque.
+                 </p>
+                 <div class="button flex">
+                    <button type="button" name="button" class="btn"> PLAY NOW</button>
+                    <i id="playbtn" class="fas fa-play"></i>
+                    <p>Watch</p>
+                 </div>
+            </div>
+        </div>  
+        <div class="items">
+            <div class="left">
+                <h2><span style="color: red;"> |</span> New Releases</h2>
+                <div class="img">
+                    <img src="/images/Paranoia-Agent.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h1>Paranoia-Agent</h1>
+                </div>
+                <div class="time flex">
+                    <label>R</label>
+                    <i class="fa-solid fa-skull"></i>
+                    <span>12-episodes</span>
+                    <i class="fa-solid fa-skull"></i>
+                    <a href="#" class="flex1"><i class="fa-brands fa-imdb"></i></a>
+                    <i class="fa-solid fa-skull"></i>
+                   <span>2015</span>
+                   <i class="fa-solid fa-skull"></i>
+                     
+                    <button>Horror</button>
+                 </div> 
+                 <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores laudantium non in, aliquid rem autem aliquam modi facere assumenda odit quod, totam saepe asperiores tenetur nam repellat debitis voluptatum atque.
+                 </p>
+                 <div class="button flex">
+                    <button type="button" name="button" class="btn"> PLAY NOW</button>
+                    <i id="playbtn" class="fas fa-play"></i>
+                    <p>Watch</p>
+                 </div>
+            </div>
+        </div>  
+        <div class="items">
+            <div class="left">
+                <h2><span style="color: red;"> |</span> New Releases</h2>
+                <div class="img">
+                    <img src="/images/tokyog.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h1>Tokyo Ghoul</h1>
+                </div>
+                <div class="time flex">
+                    <label>R</label>
+                    <i class="fa-solid fa-skull"></i>
+                    <span>1hrs 50min</span>
+                    <i class="fa-solid fa-skull"></i>
+                    <a href="#" class="flex1"><i class="fa-brands fa-imdb"></i></a>
+                    <i class="fa-solid fa-skull"></i>
+                   <span>2015</span>
+                   <i class="fa-solid fa-skull"></i>
+                     
+                    <button>Horror</button>
+                 </div> 
+                 <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores laudantium non in, aliquid rem autem aliquam modi facere assumenda odit quod, totam saepe asperiores tenetur nam repellat debitis voluptatum atque.
+                 </p>
+                 <div class="button flex">
+                    <button type="button" name="button" class="btn"> PLAY NOW</button>
+                    <i id="playbtn" class="fas fa-play"></i>
+                    <p>Watch</p>
+                 </div>
+            </div>
+        </div>  
+    </div>
+</section>
+<!--====================================new animes================================-->
+<!--script for anime crousel========-->
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    dots: false,
+    nav:false,
+    items: 1
+    })  
+</script>
+<!--script for anime crousel========-->
+
+
+<!--vidio crousel-->
+
+<div class="owl-carousel owl-theme mtop">
+    <div class="item-video" data-merge="3"><a class="owl-video" href="https://youtu.be/Acf2wgI0-jw"></a></div>
+    <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=JpxsRwnRwCQ"></a></div>
+    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=FBu_jxT1PkA"></a></div>
+    <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=oy18DJwy5lI"></a></div>
+    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=H3jLkJrhHKQ"></a></div>
+</div>
+
+<script>
+    $('.owl-carousel').owlCarousel({
+        items:1,
+        merge:true,
+        loop:true,
+        margin:10,
+        video:true,
+        lazyLoad:true,
+        center:true,
+        responsive:{
+            480:{
+                items:2
+            },
+            600:{
+                items:4
+            }
+        }
+    })
+</script>
+    
+<!--vidio crousel-->
+
+
+<footer >
+    <div class="container mtop">
+        <div class="box">
+            <div class="logo">
+                <!-- <img src="images/logo2.png" alt="" > -->
+              <h2><i class="fa-sharp fa-solid fa-ghost"></i> STARE</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint delectus rem error reiciendis nam aliquid praesentium ab optio ipsa repellendus.</p>
+            <div class="icon">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-youtube-square"></i>
+            </div>
+        </div>
+        <div class="box">
+            <h2>Explore</h2>
+            <div class="flex">
+                <ul class="ul">
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>
+                <ul>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <h2>company</h2>
+            <div class="flex">
+                <ul class="ul">
+                    <li>Company</li>
+                    <li>Terms of use</li>
+                    <li>Contact us</li>
+                    <li>Our Team</li>
+                </ul>
+                <ul class="ul">
+                    <li>Privacy Policy</li>
+                    <li>Help Center</li>
+                    <li>Subscribe</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <h2>Download App</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam unde blanditiis tempore ex magnam architecto, veniam culpa voluptas dolorum.</p>
+          <div class="img flex1">
+            <img src="/images/playstore.png" alt="" style="height: 50px; width: 50px;">
+            <img src="/images/app-store-logo.png" alt="" style="height: 50px; width: 100px;">
+          </div>
+        </div>
+    </div>
+    <p class="legal"> 2021  (c) Copyright Holder All Rights Reserved | This page is made by  Diksha Shirke </p>
+</footer>
+</body>
+</html>
+

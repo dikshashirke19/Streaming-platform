@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Eczar&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Eczar&display=swap');
+
+
+*{
+
+    font-family: 'Eczar', serif; 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+body
+{
+    font-family: 'Eczar', serif; 
+    background: #161616;
+ 
+}
+
+/*****************************************************************************************/
+.container
+{
+    max-width: 95%;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    transition: 0.5s;
+}
+ ul
+ {
+    list-style: none;
+ }
+
+ .flex{
+    display: flex;
+ }
+ .flex1{
+    display: flex;
+    justify-content: space-between;
+ }
+ i{
+    cursor: pointer;
+    transition: 0.5s;
+ }
+
+ /*--------------------------------header----------------------------------------*/
+
+ .home{
+    color: rgb(255, 255, 255);
+    background-image: url(../images/kawaiden.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%; 
+ }
+ 
+
+.navbar h2{
+padding: 15px 15px;
+   color: red;
+   float: right;
+  font-size: 30px;
+   font-family: 'Creepster', cursive;
+   text-align: center;
+   justify-content: center;
+}
+.headerbg{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(to right, rgba(34,31,31,1)0%, rgba(101, 95, 95, 0.4)100%);
+}
+header{
+    height: 10vh;
+    background: rgba(0, 0, 0, 0.2);
+}
+header .navbar{
+    align-items: center;
+    transition: 0.5s;
+}
+
+header nav ul{
+    display: inline-block;
+    font-size: 16px;
+}
+header ul li a{
+    color: white;
+    transition: all 300ms ease-in-out;
+}
+header ul li a :hover{
+    color: red;   
+}
+header ul li 
+
+{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header  .navbar span{
+    text-align: center;
+    margin-left: 20px;
+    color: rgb(254, 253, 253);
+    font-size: 25px;
+    display: none;
+}
+.subscribe i:nth-child(1){
+    margin-top: 17px;
+}
+
+
+.subscribe i{
+    font-size: 20px;
+    margin-right: 20px;
+
+}
+#playbtn{
+    background: red;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+button{
+    background: red;
+  border: none;
+    outline: none;
+    color: white;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+.subscribe button{
+    margin-right: 15px;
+}
+header.sticky .headerbg{
+    position: relative;
+}
+
+header.sticky{
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #000;
+    transition: 0.5s;
+    height: 10vh;
+}
+header.sticky .subscribe{
+    display: none;
+}
+@media only screen and (max-width:768px)
+{
+    header ul {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background: #000;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        z-index: 100;
+
+    }
+    header ul li {
+        display: block;
+        margin: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    header .navbar span {
+        display: block;
+        /* -------------here i changed the color of hamburger-------*/
+        color: white;
+    }
+    .home{
+        height: 70vh;
+        background-position: center;
+    }
+    .subscribe{
+        display: none;
+    }
+    
+
+}
+   
+
+
+ /*---------------------------------header----------------------------------------*/
+
+
+ /*=====================home content=========================*/
+ .left{
+    width: 50%;
+
+ }
+ .top{
+    margin-top: 10%;
+ }
+ .mtop{
+    margin-top: 5%;
+ }
+ h1{
+    font-size: 80px;
+    letter-spacing: 2px;
+    line-height: 60px;
+    text-transform: uppercase;
+ }
+ .time{
+    margin-top: 20px;
+    margin-bottom:20px ;
+    line-height: 40px;
+ }
+ .time label{
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 40px;
+ }
+ .time i{
+    font-size: 5px;
+    line-height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+ }
+ .home-content{
+font-size: 20px;
+line-height: 35px;
+ }
+ .btn{
+    padding: 20px 40px;
+    margin-right: 20px;
+ }
+ .home-content #playbtn{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: white;
+    color: red;
+ }
+
+ .button{
+    margin-top: 30px;
+ }
+ .button p{
+    margin-top: 12px;
+    margin-left: 20px;
+    font-size: 18px;
+ }
+
+ /*=====================home content=========================*/
+/* =========popular============*/
+.heading h2{
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+}
+.heading{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.heading button{
+    padding: 15px 50px;
+    
+}
+.popular {
+    color: white;
+}
+.popular .box{
+    position: relative;
+    background: #221f1f;
+    width: 100%;
+    cursor: pointer;
+
+}
+.popular  .box .imgbox{
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    
+}
+.popular  .box .imgbox img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.popular  .box:hover .imgbox img{
+opacity: 0.6;
+transform: scale(1.2);
+}
+.popular  .box .content{
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 40%;
+    z-index: 2;
+}
+.popular  .box .content i{
+   transition: 0.5s;
+   opacity: 0;
+   visibility: hidden;
+
+}
+.popular  .box:hover .content i{
+    opacity: 1;
+    visibility: visible;
+}
+
+.popular #playbtn{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+.popular .icon{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.popular .icon i{
+    font-size: 20px;
+    margin: 10px;
+}
+.popular .text{
+    padding: 20px;
+    color: white;
+}
+.popular .time{
+    margin: 0;
+}
+.popular .time a{
+    color: red;
+
+}
+
+.owl-nav span{
+    font-size: 50px;
+    color: white;
+}
+.owl-prev, .owl-next{
+    position: absolute;
+    top: 25px;
+}
+.owl-prev{
+    left: -20px;
+
+}
+.owl-next{
+    right: -20px;
+    
+}
+/*==========popular============*/
+/*==================new realeses=============*/
+.new-releases{
+    color: white;
+}
+.header h2 {
+    margin-bottom: 20px;
+}
+.header h2 {
+    margin-bottom: 20px;
+}
+.header h2 span{
+    border-left: 3px solid red;
+    margin-right: 30px;
+    font-weight: bold;
+}
+.time h3{
+    font-size: 50px;
+}
+.new-releases .time img{
+ width: 60px;
+ height: 60px;
+ margin-top: -10px;
+ margin-right: 10px;
+}
+.new-releases .items{
+    border-left: 3px solid red;
+    padding: 40px;
+    height: 85vh;
+   }
+   .new-releases .img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+   }
+.new-releases .items {
+    width: 100%;
+    background:linear-gradient(to right, rgba(34,31,31,1)0%, rgba(101, 95, 95, 0.4)100%);
+
+}
+
+.new-releases p{
+    font-size: 18px;
+    line-height: 35px;
+}
+
+/*==================new realeses=============*/
+/*========footar=============*/
+footer .logo{
+    font-family: 'Creepster', cursive;
+    
+    color: red;
+}
+
+footer{
+    background: #221f1f;
+    color: white;
+}
+footer .container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px;
+}
+footer .box{
+    margin-top: 50px;
+    font-size: 12px;
+}
+
+footer .box h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+ 
+
+}
+footer ul li{
+    margin-bottom: 15px;
+    opacity: 0.7;
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 5px;
+}
+footer ul li::before{
+    content: '\2022';
+    color: red;
+    display: inline-block;
+    font-weight: bold;
+    width: 1rem;
+}
+footer .ul{
+    margin-left: 0px;
+}
+footer p{
+    margin-bottom: 20px;
+    opacity: 0.7;
+    line-height: 30px;
+}
+footer .img img{
+    margin: 5px;
+    width: auto;
+    height: auto;
+}
+footer .box li:hover,
+footer .box i:hover{
+    color: red;
+}
+.legal{
+    text-align: center;
+    background: red;
+    margin: 0;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+
+/*****************************************************************************************/
+.item-video{
+width: 100%;
+height: 500px;
+}
+.item-video .owl-video{
+    width: 60px;
+    height: 60px;
+}
